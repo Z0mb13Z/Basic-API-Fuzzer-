@@ -11,10 +11,12 @@ import requests
 import random
 
 # define the API endpoint and a list of test inputs
+
 url = "http://example.com/api"
 inputs = [1, 2, "a", "b", "hello", "world"]
 
 # send a request with a random input to the API endpoint
+
 for input in inputs:
     data = {"input": random.choice(inputs)}
     response = requests.post(url, json=data)
